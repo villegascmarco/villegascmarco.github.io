@@ -428,6 +428,10 @@ p
 }
 
 @media (max-width:991px) {
+    .banner 
+    {
+        height: 124vh;
+    }
     .banner .imgSidebar
     {
         display: none;
