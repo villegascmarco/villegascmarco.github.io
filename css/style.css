@@ -14,7 +14,7 @@
     right: 30px;
     width: 50px;
     height: 50px;
-    background: #000 url(../img/menu.png);
+    background: #000 url(https://imgur.com/LLuJJ23.png);
     background-size: 30px;
     background-position: center;
     background-repeat: no-repeat;
@@ -23,7 +23,7 @@
 }
 .toggle.active
 {
-    background: #000 url(../img/close.png);
+    background: #000 url(https://imgur.com/0VXXgsc.png);
     background-size: 25px;
     background-position: center;
     background-repeat: no-repeat;
@@ -250,14 +250,14 @@ p
     max-width: 100%;
 }
 
-.services .content
+.tech .content
 {
     display: flex;
     justify-content: center;
     flex-direction: row;
     flex-wrap: wrap;
 }
-.services .content .servicesBx
+.tech .content .techBx
 {
     padding: 40px 20px;
     max-width: 340px;
@@ -266,20 +266,20 @@ p
     text-align: center;
     background: #f5f5f5;
 }
-.services .content .servicesBx:hover
+.tech .content .techBx:hover
 {
     background: #000;
 }
-.services .content .servicesBx img
+.tech .content .techBx img
 {
     max-width: 80px;
     transition: .5s;
 }
-.services .content .servicesBx:hover img
+.tech .content .techBx:hover img
 {
     filter: invert(1);
 }
-.services .content .servicesBx h2
+.tech .content .techBx h2
 {
     margin-top: 20px;
     margin-bottom: 10px;
@@ -287,17 +287,17 @@ p
     font-weight: 600;
     transition: .5s;
 }
-.services .content .servicesBx:hover h2
+.tech .content .techBx:hover h2
 {
     color: #fff;
 }
-.services .content .servicesBx p
+.tech .content .techBx p
 {
     margin: 0;
     transition: .5s;
     
 }
-.services .content .servicesBx:hover p
+.tech .content .techBx:hover p
 {
     color: #fff;
 }
@@ -474,7 +474,7 @@ p
     {
         margin-left: 0;
     }
-    .services .content .servicesBx
+    .tech .content .techBx
     {
         padding: 30px 20px;
         max-width: 340px;
@@ -501,7 +501,7 @@ p
 }
 
 @media (max-width: 500px) {
-    .services .content .servicesBx,
+    .tech .content .techBx,
     .work .content .workBx
     {
         max-width: 100%;
