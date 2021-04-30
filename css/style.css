@@ -7,6 +7,15 @@
     font-family: 'Poppins',sans-serif;
     scroll-behavior: smooth;
 }
+#test
+{
+    filter: invert(1);
+    height: 30px;
+}
+a
+{
+    text-decoration: none;
+}
 .toggle
 {
     position: fixed;
@@ -148,7 +157,6 @@ p
 .sidebar ul li a
 {
     color: #fff;
-    text-decoration: none;
     font-size: 2em;
     margin: 10px 0;
     font-weight: 300;
