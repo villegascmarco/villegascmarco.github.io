@@ -8,6 +8,8 @@
    <title>My Portfolio</title>
    <link rel="icon" href="https://i.imgur.com/WXdNZst.png">
    <link rel="stylesheet" href="./css/style.css">
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+   <script src="https://www.google.com/recaptcha/api.js" async defer></script>
 </head>
 
 <body>
@@ -136,30 +138,31 @@
          <p>If you want to contact me, send me an email or contact me through my social networks.</p>
       </div>
       <div class="contactForm">
-         <form action="" method="post">
+         <form action="" method="post" id="contactForm" enctype="multipart/form-data">
             <div class="row">
                <div class="col50">
-                  <input type="text" name="" placeholder="First Name">
+                  <input type="text" name="first_name" placeholder="First Name" required>
                </div>
                <div class="col50">
-                  <input type="text" name="" placeholder="Last Name">
+                  <input type="text" name="last_name" placeholder="Last Name" required>
                </div>
             </div>
             <div class="row">
                <div class="col50">
-                  <input type="email" name="" placeholder="Email">
+                  <input type="email" name="email" placeholder="Email" required>
                </div>
                <div class="col50">
-                  <input type="tel" name="" placeholder="Mobile No.">
-               </div>
-            </div>
-            <div class="row">
-               <div class="col100">
-                  <textarea name="" id="" cols="30" rows="10" placeholder="Message"></textarea>
+                  <input type="tel" name="mobile" placeholder="Mobile No.">
                </div>
             </div>
             <div class="row">
                <div class="col100">
+                  <textarea name="message" id="" cols="30" rows="10" placeholder="Message" required></textarea>
+               </div>
+            </div>
+            <div class="row">
+               <div class="col100">
+                  <div class="g-recaptcha" data-sitekey="6Lf7GMkaAAAAAAxKrp4TB45jPdodV7fvcWcsA1HJ"></div>
                   <input type="submit" value="Send">
                </div>
             </div>
@@ -178,25 +181,10 @@
          <li><a href="#contact" onclick="toggleMenu();">Contact</a></li>
       </ul>
    </div>
+   <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"></script>
+   <script type="text/javascript" src="JS/index.js"></script>
    <script>
-      function toggleMenu() {
-         const menuToggle = document.querySelector('.toggle');
-         const sidebarToggle = document.querySelector('.sidebar');
-         menuToggle.classList.toggle('active')
-         sidebarToggle.classList.toggle('active')
-      }
-
-      function getAge() {
-         var today = new Date();
-         var birthDate = new Date('1999/04/07');
-         var age = today.getFullYear() - birthDate.getFullYear();
-         var m = today.getMonth() - birthDate.getMonth();
-         if (m < 0 || (m === 0 && today.getDate() < birthDate.getDate())) {
-            age--;
-         }
-         document.getElementById('age').innerText = age;
-      }
-      getAge()
+      getAge();
    </script>
 </body>
 
