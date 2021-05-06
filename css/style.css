@@ -422,14 +422,14 @@ p
     cursor: pointer;
     max-width: 150px;
 }
-.copyright
+.footer
 {
     color: #fff;
     background: #111;
     text-align: center;
     padding: 10px;
 }
-.copyright p
+.footer p
 {
     margin: 0;
     font-size: 16px;
