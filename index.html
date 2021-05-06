@@ -46,11 +46,14 @@
       </div>
       <div class="content">
          <div class="textBx">
-            <p>Proactive guy with several skills that allow me to perform optimally and effectively in work
-               teams.<br>Besides, I
-               have knowledge in software development that can be maintained over time due to implementation of quality
-               rules in the process.<br>+5 years learning programing and +1 year implementing my acquired knowledge
-               throughout my study process.
+            <p>I am <span id="age"></span> years old, I am Mexican and I have been developing software ever since I was
+               16 years old.
+               <br><br>Lately, I have been using Python but I am also have experience developing environments in Java
+               and JavaScript. I have experience not only developing software, but designing and maintaining on
+               databases.<br><br>My work follows standards to ensure reliability and long period of live in
+               it.<br><br>Due to Covid pandemic, I learned to work remotely and improved my soft skills to communicate
+               accurately with work teams. Therefore, I can work remotely or in person depending on the projects
+               particularity.
             </p>
          </div>
          <div class="imgBx">
@@ -125,6 +128,7 @@
                </a>
             </div>
          </div>
+      </div>
    </section>
    <section class="contact" id="contact">
       <div class="title white">
@@ -181,6 +185,18 @@
          menuToggle.classList.toggle('active')
          sidebarToggle.classList.toggle('active')
       }
+
+      function getAge() {
+         var today = new Date();
+         var birthDate = new Date('1999/04/07');
+         var age = today.getFullYear() - birthDate.getFullYear();
+         var m = today.getMonth() - birthDate.getMonth();
+         if (m < 0 || (m === 0 && today.getDate() < birthDate.getDate())) {
+            age--;
+         }
+         document.getElementById('age').innerText = age;
+      }
+      getAge()
    </script>
 </body>
 
